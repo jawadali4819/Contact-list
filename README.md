@@ -35,7 +35,7 @@ The Contact List App is a web application that allows users to manage their cont
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/contact-list-app.git
+   git clone git@github.com:jawadali4819/Contact-list.git
 
 2. Navigate to the project directory:
    ```bash
