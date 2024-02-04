@@ -7,6 +7,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../config/firebase";
 import useDisclouse from "../hooks/useDisclouse";
 import AddAndUpdate from "./AddAndUpdate";
+import { toast } from "react-toastify";
 
 
 const ContactCard = ({contact}) => {
@@ -15,6 +16,7 @@ const ContactCard = ({contact}) => {
     const deleteContact = async (id)=>{
         try {
             await deleteDoc(doc(db, "contacts", id));
+            toast.success("Contact deleted successfully");
         } catch (error) {
             console.log(error);
         }
@@ -40,7 +42,7 @@ const ContactCard = ({contact}) => {
         <FaRegTrashCan className="text-orange text-2xl cursor-pointer" onClick={()=>deleteContact(contact.id)} />
       </div>
     </div>
-    <AddAndUpdate isUpdate isOpen={isOpen} onClose={onClose} />
+    <AddAndUpdate isUpdate isOpen={isOpen} onClose={onClose} contact={contact} />
     
     </>
   );
