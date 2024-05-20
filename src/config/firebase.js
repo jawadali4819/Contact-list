@@ -4,7 +4,7 @@ import {getFirestore} from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAh0IR91vQx10iawhmW0AQ0KF89irDyI1A",
+  apiKey: "AIzaSyAh0IR91vQx10iawhWW0AQ0KF123irDyI1A",
   authDomain: "contact-list-app-6fbd9.firebaseapp.com",
   projectId: "contact-list-app-6fbd9",
   storageBucket: "contact-list-app-6fbd9.appspot.com",
